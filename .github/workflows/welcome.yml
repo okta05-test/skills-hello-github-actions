@@ -7,4 +7,4 @@ permissions:
 jobs:
   build:
     name: post welcome comment
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
