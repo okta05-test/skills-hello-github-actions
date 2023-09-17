@@ -1,12 +1,12 @@
-name: post welcome commnent
+name: Post welcome commnent
 on:
   pull_request:
-  types: [opened, closed]
+  types: [opened]
 permissions:
   pull_requests: write
 jobs:
   build:
-    name: post welcome comment
+    name: Post welcome comment
     runs-on: ubuntu-latest
     steps:
         - run: gh pr comment $PR_URL --body "Welcome to the repository!"
